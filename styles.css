@@ -1,0 +1,139 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the whole page */
+body {
+    background-image: url('images/2018-08-03-JetpackMan.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #f7f7f7; /* A light gray background color */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif; /* A common font choice */
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #222; /* A dark background color for the header */
+    color: #fff; /* White text color */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White link color */
+}
+
+/* Style the sections */
+section {
+    padding: 70px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333; /* Dark text color */
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #222; /* Dark background color */
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* Style the contact form */
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+
+}
+
+button {
+    background-color: #007acc; /* A popular blue color for buttons */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa7; /* Slightly darker blue on hover */
+}
+
+/* Style the footer */
+footer {
+    background-color: #222; /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+/* Responsive Design for Mobile and Laptop Screens */
+@media (max-width: 768px) {
+    /* Adjust styles for screens up to 768px (typical laptop screen size) */
+    body {
+
+        background-size: cover;
+       
+    }
+    header {
+        padding: 5px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    form {
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        padding: 8px;
+    }
+    button {
+        padding: 8px 16px;
+    }
+    footer {
+        padding: 5px;
+    }
+}
